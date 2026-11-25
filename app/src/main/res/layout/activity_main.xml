@@ -22,7 +22,7 @@
         android:layout_marginTop="16dp"
         android:text="Food Order"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <!-- Tagline -->
