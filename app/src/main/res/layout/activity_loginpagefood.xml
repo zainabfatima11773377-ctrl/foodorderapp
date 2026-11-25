@@ -5,6 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1A233A"
     tools:context=".loginpagefood">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="157dp"
+        android:layout_height="64dp"
+        android:text="Welcome"
+        android:textColor="#34AEBD"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="102dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

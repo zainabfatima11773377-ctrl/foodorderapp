@@ -1,6 +1,9 @@
 package com.example.foodorderingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -9,6 +12,8 @@ import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    View food;
+    TextView foodorder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +25,17 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        food=findViewById(R.id.logoImage);
+        foodorder=findViewById(R.id.txtfood);
+        food.setOnClickListener(v -> {
+            Intent i=new Intent(this, loginpagefood.class);
+            startActivity(i);
+        });
+        foodorder.setOnClickListener(v -> {
+            Intent i=new Intent(this, loginpagefood.class);
+            startActivity(i);
+        });
+
+
     }
 }
